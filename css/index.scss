@@ -1,0 +1,174 @@
+@charset "utf-8";
+
+.main{
+	width: 100%;
+	height: 100%;
+	margin-bottom: 26px;
+	.main-wrap{
+		height: 100%;
+		padding: 0 2%;
+		margin-top: 53px;
+		display: flex;
+		.nav{
+			flex-basis: 16.5%;
+			padding: 25px 29px 25px 8px;
+			box-sizing: border-box;
+			.menu-btn{
+				display: flex;
+				align-items: center;
+				padding-left: 10%;
+				img{
+					width: 70px;
+					cursor: pointer;
+				}
+				h3{
+					font-size: 18px;
+					margin-left: 13px;
+					font-family: "yangjin";
+					font-weight: 600;
+				}
+			}
+			.nav-area{
+				width: 100%;
+				height: 600px;
+				background-color: #f1f1f1;
+				padding: 50px 40px;
+				box-sizing: border-box;
+				font-size: 18px;
+				margin-top: 33px;
+				span{
+					font-family: "yangjin";
+					color: #3f3f3f;
+				}
+				> ul{
+					> li{
+						a{
+							display: inline-block;
+							margin: 26px 0;
+							font-family: "yangjin";
+						}
+						&:first-child{
+							a{
+								margin-top: 0;
+							}
+						}
+						> ul{
+							border-left: 1px dashed #3f3f3f;
+							padding-left: 22px;
+							li{
+								font-size: 15px;
+								a{
+									margin: 22.5px 0;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.screen{
+			flex-basis: 67%;
+			height: 750px;
+			background-color: #262626;
+			border-radius: 30px;
+			box-shadow: 0px 9px 18px 0 rgb(0 0 0 / 50%), 0px -9px 15px 3px #ffffff;
+			box-sizing: border-box;
+			padding: 20px;
+			&-area{
+				width: 100%;
+				height: 100%;
+				background-color: #ccc;
+				border-radius: 20px;
+				box-shadow: 0px 0px 7.5px 7.5px rgba(0, 0, 0, 0.35) inset;
+				justify-content: center;
+				align-items: center;
+				display: flex;
+				.screen-title{
+					text-align: center;
+					h3{
+						font-size: 100px;
+						font-family: "tiktok";
+						font-weight: 300;
+						color: #ffe400;
+						text-shadow: -1px 0 #262626, 0 1px #262626, 1px 0 #262626, 0 -1px #262626;
+						-webkit-text-stroke: 1px #262626;
+					}
+					p{
+						font-size: 50px;
+						font-family: "tiktok";
+						font-weight: 300;
+						color: #fea100;
+						text-shadow: -1px 0 #262626, 0 1px #262626, 1px 0 #262626, 0 -1px #262626;
+						-webkit-text-stroke: 1px #262626;
+					}
+				}
+			}
+		}
+		.etc{
+			flex-basis: 16.5%;
+			padding: 105px 3% 102px 78px;
+			box-sizing: border-box;
+			font-size: 15px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			.etc-btn{
+				li{
+					&:first-child{
+						margin-bottom: 30px;
+					}
+					a{
+						display: flex;
+						align-items: center;
+						img{
+							width: 28px;
+						}
+						p{
+							margin-left: 11px;
+							font-family: "yangjin";
+						}
+					}
+				}
+			}
+			.dir-btn{
+				width: 100%;
+				display: flex;
+				flex-wrap: wrap;
+				text-align: center;
+
+				@for $i from 1 through 4 {
+					.rt#{$i}{
+						img{
+							transform: rotate(-90deg * ($i - 1));
+						}
+					}
+				}
+
+				li{
+					height: 57px;
+					a{
+						display: inline-block;
+						width: 61px;
+						height: 62px;
+					}
+				}
+
+				.top{
+					flex-basis: 100%;
+				}
+				.left{
+					flex-basis: 50%;
+					text-align: left;
+					
+				}
+				.right{
+					flex-basis: 50%;
+					text-align: right;
+				}
+				.bottom{
+					flex-basis: 100%;
+				}
+			}
+		}
+	}
+}

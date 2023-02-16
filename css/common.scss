@@ -1,32 +1,196 @@
 @charset "utf-8";
-*{margin: 0; padding: 0;}
+*{margin: 0; padding: 0; font-family: 'S-CoreDream-3Light';}
 ul{list-style: none;}
 a{text-decoration: none; color: #000;}
 
+
+@font-face { font-family: "yangjin"; src: url("https://cdn.jsdelivr.net/gh/supernovice-lab/font@0.9/yangjin.woff") format("woff"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "robingraffitifilledin"; src: url("../fonts/RobinGraffitiFilledin.ttf") format("ttf"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "tiktok"; src: url("../fonts/Tiktok.otf") format("otf"); font-weight: normal; font-style: normal; }
+@font-face {
+  font-family: 'S-CoreDream-3Light';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+	width: 100%;
+	height: 100%;
+	// background-color: #eee;
+	// overflow: hidden;
+}
+
 .header{
-    width: 100%;
-    height: 80px;
-    display: flex;
-    .left{
-        height: 100%;
-        flex-basis: 10.5%;
-        background-color: #fff;
-    }
-    .center{
-        flex-basis: 79%;
-        height: 70px;
-        background-color: #262626;
-        h3{
-            color: #b5b5b5;
-            text-transform: uppercase;
-            span{
-                color: #dbdbdb;
-            }
-        }
-    }
-    .right{
-        height: 100%;
-        flex-basis: 10.5%;
-        background-color: #fff;
-    }
+	width: 100%;
+	height: 80px;
+	display: flex;
+	.left{
+		height: 100%;
+		flex-basis: 10.5%;
+		background-color: #fff;
+		border-radius: 0 0 0 30px;
+		box-shadow: 0 -14px 7px -7px rgb(0 0 0 / 50%) inset;
+		display: flex;
+		justify-content: center;
+		.hbg-btn{
+			display: flex;
+			align-items: center;
+			img{
+				width: 42px;
+				cursor: pointer;
+			}
+			h3{
+				font-size: 18px;
+				margin-left: 13px;
+				font-weight: normal;
+				font-family: "yangjin";
+			}
+		}
+	}
+	.center{
+		flex-basis: 79%;
+		height: 70px;
+		// background-color: #262626;
+		background: linear-gradient(180deg, #757575, #262626, #262626, #262626, #262626, #171717);
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		box-sizing: border-box;
+		padding: 0 3%;
+		.speaker{
+			img{
+				&:first-child{
+					margin-right: 25px;
+				}
+			}
+		}
+		.logo{
+			a{
+				h3{
+					color: #b5b5b5;
+					font-size: 37px;
+					font-family: "yangjin";
+					margin-top: 5px;
+					span{
+						color: #dbdbdb;
+						font-size: 40px;
+						font-family: "yangjin";
+					}
+				}
+			}
+		}
+	}
+	.right{
+		height: 100%;
+		flex-basis: 10.5%;
+		background-color: #fff;
+		border-radius: 0 0 30px 0;
+		box-shadow: 0 -14px 7px -7px rgb(0 0 0 / 50%) inset;
+		position: relative;
+		.dark-btn{
+			position: absolute;
+			top: 45%;
+			left: 45%;
+			transform: translate(-50%,-50%);
+			height: 42px;
+			width: 100px;
+			border-radius: 21px;
+			background: url(../images/dark-btn-bg.png) center right no-repeat;
+			box-shadow: 0px 0px 3.8px 0.2px rgba(0, 0, 0, 0.35) inset;
+			display: flex;
+			align-items: center;
+			transition: 0.5s;
+			cursor: pointer;
+			&:hover{
+				background: url(../images/dark-btn-bg.png) center left no-repeat;
+				.dark-sw{
+					left: calc(100% - 37.75px);
+				}
+			}
+			.dark-sw{
+				position: absolute;
+				left: 4.25px;
+				width: 33.5px;
+				height: 33.5px;
+				border-radius: 50%;
+				background-color: #fff;
+				box-shadow: 0px 8px 5px 0px rgba(0, 0, 0, 0.4);
+				transition: 0.5s;
+			}
+		}
+	}
+}
+
+.hbg-nav{
+	position: absolute;
+	top: 100px;
+	left: -18%;
+	width: 18%;
+	transition: 0.3s;
+	z-index: 9999;
+	&.on{
+		top: 100px;
+		left: 20px;
+	}
+	.nav-area{
+		width: 100%;
+		height: 600px;
+		background-color: rgba(241, 241, 241, 0.8);
+		padding: 50px 40px;
+		box-sizing: border-box;
+		font-size: 18px;
+		span{
+			font-family: "yangjin";
+			color: #3f3f3f;
+		}
+		> ul{
+			> li{
+				a{
+					display: inline-block;
+					margin: 26px 0;
+					font-family: "yangjin";
+				}
+				&:first-child{
+					a{
+						margin-top: 0;
+					}
+				}
+				> ul{
+					border-left: 1px dashed #3f3f3f;
+					padding-left: 22px;
+					li{
+						font-size: 15px;
+						a{
+							margin: 22.5px 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.content-title{
+	width: 100%;
+	text-align: center;
+	margin-top: 40px;
+	h3{
+		font-size: 50px;
+		font-family: "tiktok";
+		font-weight: normal;
+		span{
+			font-family: "yangjin";
+			font-size: 35px;
+		}
+	}
+}
+
+.footer{
+	width: 100%;
+	text-align: center;
+	p{
+		font-size: 13px;
+		color: #262626;
+	}
 }

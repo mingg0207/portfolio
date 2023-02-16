@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "S-CoreDream-3Light";
 }
 
 ul {
@@ -12,6 +13,35 @@ a {
   color: #000;
 }
 
+@font-face {
+  font-family: "yangjin";
+  src: url("https://cdn.jsdelivr.net/gh/supernovice-lab/font@0.9/yangjin.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "robingraffitifilledin";
+  src: url("../fonts/RobinGraffitiFilledin.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "tiktok";
+  src: url("../fonts/Tiktok.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "S-CoreDream-3Light";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  width: 100%;
+  height: 100%;
+}
+
 .header {
   width: 100%;
   height: 80px;
@@ -21,21 +51,152 @@ a {
   height: 100%;
   flex-basis: 10.5%;
   background-color: #fff;
+  border-radius: 0 0 0 30px;
+  box-shadow: 0 -14px 7px -7px rgba(0, 0, 0, 0.5) inset;
+  display: flex;
+  justify-content: center;
+}
+.header .left .hbg-btn {
+  display: flex;
+  align-items: center;
+}
+.header .left .hbg-btn img {
+  width: 42px;
+  cursor: pointer;
+}
+.header .left .hbg-btn h3 {
+  font-size: 18px;
+  margin-left: 13px;
+  font-weight: normal;
+  font-family: "yangjin";
 }
 .header .center {
   flex-basis: 79%;
   height: 70px;
-  background-color: #262626;
+  background: linear-gradient(180deg, #757575, #262626, #262626, #262626, #262626, #171717);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 3%;
 }
-.header .center h3 {
+.header .center .speaker img:first-child {
+  margin-right: 25px;
+}
+.header .center .logo a h3 {
   color: #b5b5b5;
-  text-transform: uppercase;
+  font-size: 37px;
+  font-family: "yangjin";
+  margin-top: 5px;
 }
-.header .center h3 span {
+.header .center .logo a h3 span {
   color: #dbdbdb;
+  font-size: 40px;
+  font-family: "yangjin";
 }
 .header .right {
   height: 100%;
   flex-basis: 10.5%;
   background-color: #fff;
+  border-radius: 0 0 30px 0;
+  box-shadow: 0 -14px 7px -7px rgba(0, 0, 0, 0.5) inset;
+  position: relative;
+}
+.header .right .dark-btn {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  height: 42px;
+  width: 100px;
+  border-radius: 21px;
+  background: url(../images/dark-btn-bg.png) center right no-repeat;
+  box-shadow: 0px 0px 3.8px 0.2px rgba(0, 0, 0, 0.35) inset;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.header .right .dark-btn:hover {
+  background: url(../images/dark-btn-bg.png) center left no-repeat;
+}
+.header .right .dark-btn:hover .dark-sw {
+  left: calc(100% - 37.75px);
+}
+.header .right .dark-btn .dark-sw {
+  position: absolute;
+  left: 4.25px;
+  width: 33.5px;
+  height: 33.5px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0px 8px 5px 0px rgba(0, 0, 0, 0.4);
+  transition: 0.5s;
+}
+
+.hbg-nav {
+  position: absolute;
+  top: 100px;
+  left: -18%;
+  width: 18%;
+  transition: 0.3s;
+  z-index: 9999;
+}
+.hbg-nav.on {
+  top: 100px;
+  left: 20px;
+}
+.hbg-nav .nav-area {
+  width: 100%;
+  height: 600px;
+  background-color: rgba(241, 241, 241, 0.8);
+  padding: 50px 40px;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+.hbg-nav .nav-area span {
+  font-family: "yangjin";
+  color: #3f3f3f;
+}
+.hbg-nav .nav-area > ul > li a {
+  display: inline-block;
+  margin: 26px 0;
+  font-family: "yangjin";
+}
+.hbg-nav .nav-area > ul > li:first-child a {
+  margin-top: 0;
+}
+.hbg-nav .nav-area > ul > li > ul {
+  border-left: 1px dashed #3f3f3f;
+  padding-left: 22px;
+}
+.hbg-nav .nav-area > ul > li > ul li {
+  font-size: 15px;
+}
+.hbg-nav .nav-area > ul > li > ul li a {
+  margin: 22.5px 0;
+}
+
+.content-title {
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+}
+.content-title h3 {
+  font-size: 50px;
+  font-family: "tiktok";
+  font-weight: normal;
+}
+.content-title h3 span {
+  font-family: "yangjin";
+  font-size: 35px;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+}
+.footer p {
+  font-size: 13px;
+  color: #262626;
 }/*# sourceMappingURL=common.css.map */

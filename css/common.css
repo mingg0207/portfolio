@@ -139,6 +139,20 @@ html, body {
   transition: 0.5s;
 }
 
+.window {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: transparent;
+  display: none;
+  z-index: 1;
+}
+.window.on {
+  display: block;
+}
+
 .hbg-nav {
   position: absolute;
   top: 100px;

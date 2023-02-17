@@ -124,6 +124,21 @@ html,body{
 	}
 }
 
+
+.window{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background-color: transparent;
+	display: none;
+	z-index: 1;
+	&.on{
+		display: block;
+	}
+}
+
 .hbg-nav{
 	position: absolute;
 	top: 100px;

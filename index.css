@@ -1,0 +1,168 @@
+html, body {
+  background-color: transparent;
+  background: none;
+}
+
+.main {
+  width: 100%;
+  margin-bottom: 26px;
+}
+.main .main-wrap {
+  height: 100%;
+  height: auto;
+  padding: 0 2%;
+  margin-top: 53px;
+  display: flex;
+}
+.main .main-wrap .nav {
+  flex-basis: 16.5%;
+  padding: 25px 29px 25px 8px;
+  box-sizing: border-box;
+}
+.main .main-wrap .nav .menu-btn {
+  display: flex;
+  align-items: center;
+  padding-left: 10%;
+}
+.main .main-wrap .nav .menu-btn img {
+  width: 70px;
+  cursor: pointer;
+}
+.main .main-wrap .nav .menu-btn h3 {
+  font-size: 18px;
+  margin-left: 13px;
+  font-family: "yangjin";
+  font-weight: 600;
+}
+.main .main-wrap .nav .nav-area {
+  width: 100%;
+  height: 600px;
+  background-color: #f1f1f1;
+  padding: 50px 40px;
+  box-sizing: border-box;
+  font-size: 18px;
+  margin-top: 33px;
+}
+.main .main-wrap .nav .nav-area span {
+  font-family: "yangjin";
+  color: #3f3f3f;
+}
+.main .main-wrap .nav .nav-area > ul > li a {
+  display: inline-block;
+  margin: 26px 0;
+  font-family: "yangjin";
+}
+.main .main-wrap .nav .nav-area > ul > li:first-child a {
+  margin-top: 0;
+}
+.main .main-wrap .nav .nav-area > ul > li > ul {
+  border-left: 1px dashed #3f3f3f;
+  padding-left: 22px;
+}
+.main .main-wrap .nav .nav-area > ul > li > ul li {
+  font-size: 15px;
+}
+.main .main-wrap .nav .nav-area > ul > li > ul li a {
+  margin: 22.5px 0;
+}
+.main .main-wrap .screen {
+  flex-basis: 67%;
+  height: 750px;
+  background-color: #262626;
+  border-radius: 30px;
+  box-shadow: 0px 9px 18px 0 rgba(0, 0, 0, 0.5), 0px -9px 15px 3px #ffffff;
+  box-sizing: border-box;
+  padding: 20px;
+}
+.main .main-wrap .screen-area {
+  width: 100%;
+  height: 100%;
+  background-color: #ccc;
+  border-radius: 20px;
+  box-shadow: 0px 0px 7.5px 7.5px rgba(0, 0, 0, 0.35) inset;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.main .main-wrap .screen-area .screen-title {
+  text-align: center;
+}
+.main .main-wrap .screen-area .screen-title h3 {
+  font-size: 100px;
+  font-family: "tiktok";
+  font-weight: 300;
+  color: #ffe400;
+  text-shadow: -1px 0 #262626, 0 1px #262626, 1px 0 #262626, 0 -1px #262626;
+  -webkit-text-stroke: 1px #262626;
+}
+.main .main-wrap .screen-area .screen-title p {
+  font-size: 50px;
+  font-family: "tiktok";
+  font-weight: 300;
+  color: #fea100;
+  text-shadow: -1px 0 #262626, 0 1px #262626, 1px 0 #262626, 0 -1px #262626;
+  -webkit-text-stroke: 1px #262626;
+}
+.main .main-wrap .etc {
+  flex-basis: 16.5%;
+  padding: 105px 3% 102px 78px;
+  box-sizing: border-box;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main .main-wrap .etc .etc-btn li:first-child {
+  margin-bottom: 30px;
+}
+.main .main-wrap .etc .etc-btn li a {
+  display: flex;
+  align-items: center;
+}
+.main .main-wrap .etc .etc-btn li a img {
+  width: 28px;
+}
+.main .main-wrap .etc .etc-btn li a p {
+  margin-left: 11px;
+  font-family: "yangjin";
+}
+.main .main-wrap .etc .dir-btn {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.main .main-wrap .etc .dir-btn .rt1 img {
+  transform: rotate(0deg);
+}
+.main .main-wrap .etc .dir-btn .rt2 img {
+  transform: rotate(-90deg);
+}
+.main .main-wrap .etc .dir-btn .rt3 img {
+  transform: rotate(-180deg);
+}
+.main .main-wrap .etc .dir-btn .rt4 img {
+  transform: rotate(-270deg);
+}
+.main .main-wrap .etc .dir-btn li {
+  height: 57px;
+}
+.main .main-wrap .etc .dir-btn li a {
+  display: inline-block;
+  width: 61px;
+  height: 62px;
+}
+.main .main-wrap .etc .dir-btn .top {
+  flex-basis: 100%;
+}
+.main .main-wrap .etc .dir-btn .left {
+  flex-basis: 50%;
+  text-align: left;
+}
+.main .main-wrap .etc .dir-btn .right {
+  flex-basis: 50%;
+  text-align: right;
+}
+.main .main-wrap .etc .dir-btn .bottom {
+  flex-basis: 100%;
+}/*# sourceMappingURL=index.css.map */

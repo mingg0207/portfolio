@@ -1,9 +1,5 @@
 @charset "utf-8";
 
-body{
-  background-color: #ccc;
-}
-
 .profile{
   display: flex;
   max-width: 1620px;
@@ -97,7 +93,7 @@ body{
           height: 35px;
           background-color: #494949;
           border-radius: 10px;
-          padding: 5px;
+          padding: 3px;
           box-sizing: border-box;
           img{
             width: 100%;

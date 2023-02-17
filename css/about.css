@@ -21,20 +21,55 @@
   left: 50%;
   transform: translateX(-50%);
 }
-.profile .profile-img img {
+.profile .profile-img > img {
   width: 393px;
   position: relative;
   display: none;
 }
 .profile .profile-img .plus-ani {
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: -26px;
+}
+.profile .profile-img .plus-ani img:nth-child(1) {
+  opacity: 0.33;
+}
+.profile .profile-img .plus-ani img:nth-child(2) {
+  opacity: 0.66;
+}
+.profile .profile-img .plus-ani img:nth-child(3) {
+  opacity: 1;
+}
+.profile .profile-img .plus-ani img:nth-child(4) {
+  opacity: 0;
+}
+.profile .profile-img .plus-ani.active {
+  margin-bottom: 0;
+  transition: 0.5s;
+}
+.profile .profile-img .plus-ani.active img:nth-child(1) {
+  opacity: 0;
+  transition: 0.5s;
+}
+.profile .profile-img .plus-ani.active img:nth-child(2) {
+  opacity: 0.33;
+  transition: 0.5s;
+}
+.profile .profile-img .plus-ani.active img:nth-child(3) {
+  opacity: 0.66;
+  transition: 0.5s;
+}
+.profile .profile-img .plus-ani.active img:nth-child(4) {
+  opacity: 1;
+  transition: 0.5s;
 }
 .profile .profile-img .ani-key1 {
-  top: 12%;
+  bottom: 84%;
   right: 23%;
 }
 .profile .profile-img .ani-key2 {
-  top: 28%;
+  bottom: 68%;
   left: 20%;
 }
 .profile .profile-img .ani-key3 {

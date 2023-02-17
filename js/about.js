@@ -49,4 +49,13 @@ $(document).ready(function () {
     $(".profile .profile-txt .profile-skill .progress-area").removeClass("on");
   })
 
+
+  setInterval(function(){
+    $(".profile .profile-img .plus-ani").addClass("active")
+    setTimeout(function(){
+      $(".profile .profile-img .plus-ani").removeClass("active")
+    },500)
+    
+  },1100)
+
 });

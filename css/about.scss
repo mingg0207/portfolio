@@ -20,20 +20,48 @@
       left: 50%;
       transform: translateX(-50%);
     }
-    img{
+    > img{
       width: 393px;
       position: relative;
-      display: none;
+      // display: none;
     }
     .plus-ani{
       position: absolute;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: -26px;
+      img{
+
+        $opacity_start: (0.33, 0.66, 1, 0);
+        @for $i from 1 through length($opacity_start){
+          &:nth-child(#{$i}){
+            opacity: nth($color-dark, $i);
+          }
+        }
+        
+      }
+      &.active{
+        margin-bottom: 0;
+        transition: 0.5s;
+        img{
+
+          $opacity_end: (0, 0.33, 0.66, 1);
+          @for $i from 1 through length($opacity_end){
+            &:nth-child(#{$i}){
+              opacity: nth($color-dark, $i);
+              transition: 0.5s;
+            }
+          }
+
+        }
+      }
     }
     .ani-key1{
-      top: 12%;
+      bottom: 84%;
       right: 23%;
     }
     .ani-key2{
-      top: 28%;
+      bottom: 68%;
       left: 20%;
     }
     .ani-key3{

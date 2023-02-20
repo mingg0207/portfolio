@@ -1,4 +1,10 @@
 $(document).ready(function () {
+
+  $("a").click(function(e){
+    if($(this).attr("href") == "#"){
+      e.preventDefault();
+    }
+  })
   
   $(".header .left .hbg-btn img").click(function(){
     if($(this).hasClass("off")){

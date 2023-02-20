@@ -153,7 +153,8 @@
   position: absolute;
   right: 20px;
   bottom: 20px;
-  background-color: rgba(255, 255, 255, 0.45);
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 2px 4px -1.5px rgba(0, 0, 0, 0.5), inset 0 -2px 4px -2px rgba(0, 0, 0, 0.5), inset 0 2px 4px -2px rgba(255, 255, 255, 0.5);
   border-radius: 20px;
   padding: 15px;
 }
@@ -240,24 +241,74 @@
 }
 .profile .profile-txt .profile-skill .progress-area::after {
   content: "";
-  font-size: 14px;
+  font-size: 16px;
   position: absolute;
   width: 100%;
-  height: 100px;
+  height: 70px;
   border-radius: 15px;
   background-color: rgba(231, 156, 156, 0.9);
   left: 50%;
-  top: -75px;
+  top: -45px;
   transform: translateX(-50%) scale(0);
   transition: 0.3s;
   white-space: pre;
-  line-height: 20px;
+  line-height: 30px;
   box-sizing: border-box;
   padding-top: 5px;
+  text-align: center;
+}
+.profile .profile-txt .profile-skill .progress-area.skill-desc1::after {
+  content: "PS : 고급 툴을 활용할 수 있고, 사진 편집 및 클리핑 마스크, 레이어 스타일 등으로 \a포스터 및 웹 페이지를 제작할 수 있습니다.";
+}
+.profile .profile-txt .profile-skill .progress-area.skill-desc2::after {
+  content: "AI : 패스파인더 및 마스크 기능, 이미지 트레이스 및 패턴 제작 적용이 가능하고, \a다양한 툴을 활용하여 로고 및 패키지 디자인을 할 수 있습니다.";
+}
+.profile .profile-txt .profile-skill .progress-area.skill-desc3::after {
+  content: "HTML : css 링크 및 js 스크립트, 파비콘 적용 등 기본 기능을 사용할 수 있고, \a태그와 클래스 및 id를 활용하여 웹 페이지를 구성하고 제작할 수 있습니다.";
+}
+.profile .profile-txt .profile-skill .progress-area.skill-desc4::after {
+  content: "CSS : 태그와 클래스명 및 id명을 구분하여 웹 페이지를 디자인할 수 있고, \a기본 설정과 hover, nth-child, before/after 등을 활용할 수 있습니다.";
+}
+.profile .profile-txt .profile-skill .progress-area.skill-desc5::after {
+  content: "JS : jQuery의 기본 문법을 숙지하고 있으며, 라이브러리를 활용하고, \a class명 추가 및 변수/배열 등을 통해 웹 페이지를 디자인 할 수 있습니다.";
+}
+@media (max-width: 1340px) {
+  .profile .profile-txt .profile-skill .progress-area::after {
+    height: 70px;
+    top: -45px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .profile .profile-txt .profile-skill .progress-area.on::after {
+    top: -90px;
+  }
+  .profile .profile-txt .profile-skill .progress-area.skill-desc1::after {
+    content: "PS : 고급 툴을 활용할 수 있고, \a사진 편집 및 클리핑 마스크, 레이어 스타일 등으로 \a포스터 및 웹 페이지를 제작할 수 있습니다.";
+  }
+  .profile .profile-txt .profile-skill .progress-area.skill-desc2::after {
+    content: "AI : 패스파인더 및 마스크 기능, 이미지 트레이스, \a패턴 적용이 가능하고, 다양한 툴을 활용하여 \a로고 및 패키지 디자인을 할 수 있습니다.";
+  }
+  .profile .profile-txt .profile-skill .progress-area.skill-desc3::after {
+    content: "HTML : css 링크 및 js 스크립트, 파비콘 적용 등을 \a사용할 수 있고, 태그와 클래스, id를 활용하여 \a웹 페이지를 구성하고 제작할 수 있습니다.";
+  }
+  .profile .profile-txt .profile-skill .progress-area.skill-desc4::after {
+    content: "CSS : 태그와 클래스명 및 id명을 구분하여 \a웹 페이지를 디자인할 수 있고, 기본 설정과 hover, \anth-child, before/after 등을 활용할 수 있습니다.";
+  }
+  .profile .profile-txt .profile-skill .progress-area.skill-desc5::after {
+    content: "JS : jQuery의 기본 문법을 숙지하고 있으며, \a라이브러리 활용과 class 및 변수/배열 등을 통해 \a웹 페이지를 디자인 할 수 있습니다.";
+  }
+}
+@media (max-width: 767px) {
+  .profile .profile-txt .profile-skill .progress-area::after {
+    display: none;
+  }
+  .profile .profile-txt .profile-skill .progress-area .progress::before {
+    display: none;
+  }
 }
 .profile .profile-txt .profile-skill .progress-area.on::after {
   transform: translateX(-50%) scale(1);
-  top: -120px;
+  top: -90px;
 }
 .profile .profile-txt .contact {
   display: flex;
@@ -272,7 +323,8 @@
   flex-basis: 45%;
   text-align: center;
   padding: 30px 0;
-  background-color: #ccc;
+  background-color: #ddd;
+  box-shadow: 0 2px 4px -2px rgba(0, 0, 0, 0.5), inset 0 -2px 4px -2px rgba(0, 0, 0, 0.5), inset 0 2px 4px -2px rgba(255, 255, 255, 0.5);
   border-radius: 20px;
   position: relative;
 }

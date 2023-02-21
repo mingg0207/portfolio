@@ -214,6 +214,7 @@
   display: flex;
   flex-direction: column-reverse;
   position: relative;
+  cursor: pointer;
 }
 .profile .profile-txt .profile-skill .progress-area .progress::before {
   content: "";
@@ -327,6 +328,13 @@
   box-shadow: 0 2px 4px -2px rgba(0, 0, 0, 0.5), inset 0 -2px 4px -2px rgba(0, 0, 0, 0.5), inset 0 2px 4px -2px rgba(255, 255, 255, 0.5);
   border-radius: 20px;
   position: relative;
+  cursor: pointer;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  user-select: text;
+}
+.profile .profile-txt .contact div p {
+  cursor: text;
 }
 .profile .profile-txt .contact div::after {
   content: "";
@@ -346,7 +354,7 @@
   padding-top: 5px;
 }
 .profile .profile-txt .contact div:nth-of-type(1)::after {
-  content: "클릭 시 메일주소가 \a복사됩니다.";
+  content: "글자 클릭 시 \a메일주소가 복사됩니다.";
 }
 .profile .profile-txt .contact div:nth-of-type(1).copy::after {
   content: "복사 완료!";
@@ -354,7 +362,7 @@
   line-height: 50px;
 }
 .profile .profile-txt .contact div:nth-of-type(2)::after {
-  content: "클릭 시 카카오톡 ID가 \a복사됩니다.";
+  content: "글자 클릭 시 \a카카오톡 ID가 복사됩니다.";
 }
 .profile .profile-txt .contact div:nth-of-type(2).copy::after {
   content: "복사 완료!";

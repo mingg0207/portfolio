@@ -27,4 +27,23 @@ $(document).ready(function () {
       $(".window").removeClass("on");
   })
 
+  
+
+  $("html,body").contextmenu(function(e){
+
+    e.preventDefault();
+
+    let x = e.pageX;
+    let y = e.pageY;
+
+    console.log("가로:"+x , "세로:"+y)
+
+    $(".quick-menu").css("left", x+"px").css("top", y+"px").show();
+  })
+
+
+  $("html,body").click(function(e){
+      $(".quick-menu").hide()
+  })
+
 });

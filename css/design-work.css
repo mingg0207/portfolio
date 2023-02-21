@@ -95,6 +95,7 @@
   box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.5), inset 0 -4px 6px -2px rgba(0, 0, 0, 0.5), inset 0 4px 6px -2px rgba(255, 255, 255, 0.5);
   margin-bottom: 20px;
   position: relative;
+  cursor: pointer;
 }
 .design-work .design-work-list ul li::after {
   content: "";
@@ -152,6 +153,8 @@
   /* 리스트 길이 만큼 순회 */
   /* 리스트 길이 만큼 순회 */
   /* 리스트 길이 만큼 순회 */
+  /* 리스트 길이 만큼 순회 */
+  /* 리스트 길이 만큼 순회 */
 }
 .design-work .design-content-area .design-content-wrap .design-content:nth-child(1) .design-content-desc .btn-wrap .link-btn:hover {
   border-color: #e96666;
@@ -173,6 +176,16 @@
 .design-work .design-content-area .design-content-wrap .design-content:nth-child(2) .design-content-desc .btn-wrap .link-btn::after {
   background: #68ce60;
 }
+.design-work .design-content-area .design-content-wrap .design-content:nth-child(3) .design-content-desc .btn-wrap .link-btn:hover {
+  border-color: #e2211c;
+  color: #ffc410 !important;
+}
+.design-work .design-content-area .design-content-wrap .design-content:nth-child(3) .design-content-desc .btn-wrap .link-btn::before {
+  background: #e2211c;
+}
+.design-work .design-content-area .design-content-wrap .design-content:nth-child(3) .design-content-desc .btn-wrap .link-btn::after {
+  background: #ffc410;
+}
 .design-work .design-content-area .design-content-wrap .design-content:nth-child(1) .design-content-img > div:hover::after {
   background: url(../images/thumb-itamin2.png);
   background-size: cover;
@@ -189,6 +202,16 @@
   background-position: center center;
 }
 .design-work .design-content-area .design-content-wrap .design-content:nth-child(2) .design-content-img .pc::after {
+  background: url(../images/thumb-water.png);
+  background-size: cover;
+  background-position: center center;
+}
+.design-work .design-content-area .design-content-wrap .design-content:nth-child(3) .design-content-img > div:hover::after {
+  background: url(../images/thumb-water2.png);
+  background-size: cover;
+  background-position: center center;
+}
+.design-work .design-content-area .design-content-wrap .design-content:nth-child(3) .design-content-img .pc::after {
   background: url(../images/thumb-water.png);
   background-size: cover;
   background-position: center center;
@@ -212,6 +235,7 @@
   transform: translateX(-50%);
   bottom: 4%;
   overflow: hidden;
+  cursor: pointer;
 }
 .design-work .design-content-area .design-content-wrap .design-content .design-content-img .pc::after {
   content: "";

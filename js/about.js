@@ -56,13 +56,13 @@ $(document).ready(function () {
         console.log(e);
     });
 
-  $(".profile .profile-txt .contact div").click(function(){
-    let i = $(".profile .profile-txt .contact div").index(this);
+  $(".profile .profile-txt .contact div p").click(function(){
+    let i = $(this).parents(".profile .profile-txt .contact div").index();
     console.log(i)
-    $(".profile .profile-txt .contact div:nth-of-type("+(i+1)+")").addClass("copy");
+    $(".profile .profile-txt .contact div:nth-of-type("+i+")").addClass("copy");
 
     setTimeout(function(){
-      $(".profile .profile-txt .contact div:nth-of-type("+(i+1)+")").removeClass("copy");
+      $(".profile .profile-txt .contact div:nth-of-type("+i+")").removeClass("copy");
     },1000)
 
   })
@@ -91,5 +91,6 @@ $(document).ready(function () {
   }) .mouseout(function(){
     $(".profile .profile-txt .profile-skill .progress-area").removeClass("skill-desc"+(currrent_skill_idx+1));
   })
+
 
 });

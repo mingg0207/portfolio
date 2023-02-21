@@ -219,6 +219,7 @@
           display: flex;
           flex-direction: column-reverse;
           position: relative;
+          cursor: pointer;
           &::before{
             content: "";
             position: absolute;
@@ -345,6 +346,16 @@
         box-shadow: 0 2px 4px -2px rgba(0, 0, 0, 0.5), inset 0 -2px 4px -2px rgba(0, 0, 0, 0.5), inset 0 2px 4px -2px rgba(255, 255, 255, 0.5);
         border-radius: 20px;
         position: relative;
+        cursor: pointer;
+
+        -webkit-user-select:text;
+        -moz-user-select:text;
+        -ms-user-select:text;
+        user-select:text;
+
+        p{
+          cursor: text;
+        }
         &::after{
           content: "";
           font-size: 14px;
@@ -364,7 +375,7 @@
         }
         &:nth-of-type(1){
           &::after{
-            content: "클릭 시 메일주소가 \A 복사됩니다.";
+            content: "글자 클릭 시 \A 메일주소가 복사됩니다.";
           }
           &.copy{
             &::after{
@@ -376,7 +387,7 @@
         }
         &:nth-of-type(2){
           &::after{
-            content: "클릭 시 카카오톡 ID가 \A 복사됩니다.";
+            content: "글자 클릭 시 \A 카카오톡 ID가 복사됩니다.";
           }
           &.copy{
             &::after{
@@ -412,3 +423,4 @@
     }
   }
 }
+

@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+[data-dark="true"]{
+
+  html,body{
+    background: linear-gradient(135deg, #47608d, #343955);
+  }
+  html.main-index,body.main-index{
+    background: #343955;
+  }
+
+  .main .main-wrap .screen .screen-area{
+    background: linear-gradient(135deg, #9294c4, #47608d);
+  }
+
+  .footer{
+    p{
+      color: #ddd;
+    }
+  }
+
+}

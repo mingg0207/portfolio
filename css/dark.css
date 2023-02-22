@@ -1,0 +1,12 @@
+[data-dark=true] html, [data-dark=true] body {
+  background: linear-gradient(135deg, #47608d, #343955);
+}
+[data-dark=true] html.main-index, [data-dark=true] body.main-index {
+  background: #343955;
+}
+[data-dark=true] .main .main-wrap .screen .screen-area {
+  background: linear-gradient(135deg, #9294c4, #47608d);
+}
+[data-dark=true] .footer p {
+  color: #ddd;
+}/*# sourceMappingURL=dark.css.map */

@@ -129,10 +129,10 @@ body {
   transition: 0.5s;
   cursor: pointer;
 }
-.header .right .dark-btn:hover {
+.header .right .dark-btn.night {
   background: url(../images/dark-btn-bg.png) center left no-repeat;
 }
-.header .right .dark-btn:hover .dark-sw {
+.header .right .dark-btn.night .dark-sw {
   left: calc(100% - 37.75px);
 }
 .header .right .dark-btn .dark-sw {

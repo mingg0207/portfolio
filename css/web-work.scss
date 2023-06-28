@@ -177,9 +177,9 @@
           }
         }
         
-        $thumb-pc: (url(../images/thumb-shinhwa-pc.png), url(../images/thumb-arte-pc.png), url(../images/thumb-shinhwa-pc.png));
-        $thumb-tablet: (url(../images/thumb-shinhwa-tablet.png), url(../images/thumb-arte-pc.png), url(../images/thumb-shinhwa-tablet.png));
-        $thumb-mobile: (url(../images/thumb-shinhwa-mobile.png), url(../images/thumb-arte-pc.png), url(../images/thumb-shinhwa-mobile.png));
+        $thumb-pc: (url(../images/thumb-shinhwa-pc.png), url(../images/thumb-arte-pc.png), url(../images/thumb-subway-pc.png));
+        $thumb-tablet: (url(../images/thumb-shinhwa-tablet.png), url(../images/thumb-arte-pc.png), url(../images/thumb-subway-tablet.png));
+        $thumb-mobile: (url(../images/thumb-shinhwa-mobile.png), url(../images/thumb-arte-pc.png), url(../images/thumb-subway-mobile.png));
 
         @for $i from 1 through length($thumb-pc) { /* 리스트 길이 만큼 순회 */
           &:nth-child(#{$i}){

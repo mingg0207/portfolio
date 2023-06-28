@@ -30,7 +30,11 @@ $(document).ready(function () {
 
   const web_work_detail = [  
     ["images/process-itamin1.jpg", "images/process-itamin2.jpg"],
-    "images/process-water.jpg"
+    "images/process-water.jpg",
+    // "images/process-water.jpg",
+    "images/process-subwaybanner.png",
+    "images/process-ps.png",
+    "images/process-ai.png",
   ]
     
   

@@ -38,7 +38,7 @@ $(document).ready(function () {
   const web_work_detail = [  
     "images/process-shinhwa.jpg",
     "images/thumb-arte-pc.png",
-    "https://via.placeholder.com/1200x2000/959",
+    "images/thumb-subway-pc.png",
     "images/process-vbapp.png"
   ]
     

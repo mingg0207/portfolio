@@ -241,17 +241,17 @@
   background-position: center bottom;
 }
 .web-work .web-content-area .web-content-wrap .web-content:nth-child(3) .web-content-img .pc::after {
-  background: url(../images/thumb-shinhwa-pc.png);
+  background: url(../images/thumb-subway-pc.png);
   background-size: cover;
   background-position: center top;
 }
 .web-work .web-content-area .web-content-wrap .web-content:nth-child(3) .web-content-img .tablet::after {
-  background: url(../images/thumb-shinhwa-tablet.png);
+  background: url(../images/thumb-subway-tablet.png);
   background-size: cover;
   background-position: center top;
 }
 .web-work .web-content-area .web-content-wrap .web-content:nth-child(3) .web-content-img .mobile::after {
-  background: url(../images/thumb-shinhwa-mobile.png);
+  background: url(../images/thumb-subway-mobile.png);
   background-size: cover;
   background-position: center top;
 }

@@ -2,6 +2,7 @@
 
 [data-dark="true"]{
 
+  // [common]
   html,body{
     background: linear-gradient(135deg, #47608d, #343955);
   }
@@ -17,6 +18,45 @@
     p{
       color: #ddd;
     }
+  }
+
+  //[main]
+  .main .main-wrap .nav .menu-btn h3{
+    color: #ddd;
+  }
+  
+  .content-title h3{
+    color: #ddd;
+  }
+
+  .main .main-wrap .nav .nav-area, .hbg-nav .nav-area{
+    background-color: #dbdce6;
+  }
+
+  .main .main-wrap .etc .etc-btn li a p{
+    color: #cccccc;
+  }
+
+  //[work]
+  .works > div a h3{
+    opacity: 0.6;
+  }
+  .works > div a:hover h3{
+    opacity: 0.5;
+    color: #f35d5d;
+  }
+
+  //[web, design]
+  .web-work .web-work-list h3, .design-work .design-work-list h3{
+    color: #ddd;
+  }
+
+  .web-work .web-work-list h3::after, .design-work .design-work-list h3::after{
+    background-color: #ddd;
+  }
+
+  .web-work .web-content-area .web-content-wrap .web-content .web-content-desc, .design-work .design-content-area .design-content-wrap .design-content .design-content-desc{
+    background-color: rgba(255, 255, 255, 0.65);
   }
 
 }

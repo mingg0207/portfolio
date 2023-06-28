@@ -9,4 +9,32 @@
 }
 [data-dark=true] .footer p {
   color: #ddd;
+}
+[data-dark=true] .main .main-wrap .nav .menu-btn h3 {
+  color: #ddd;
+}
+[data-dark=true] .content-title h3 {
+  color: #ddd;
+}
+[data-dark=true] .main .main-wrap .nav .nav-area, [data-dark=true] .hbg-nav .nav-area {
+  background-color: #dbdce6;
+}
+[data-dark=true] .main .main-wrap .etc .etc-btn li a p {
+  color: #cccccc;
+}
+[data-dark=true] .works > div a h3 {
+  opacity: 0.6;
+}
+[data-dark=true] .works > div a:hover h3 {
+  opacity: 0.5;
+  color: #f35d5d;
+}
+[data-dark=true] .web-work .web-work-list h3, [data-dark=true] .design-work .design-work-list h3 {
+  color: #ddd;
+}
+[data-dark=true] .web-work .web-work-list h3::after, [data-dark=true] .design-work .design-work-list h3::after {
+  background-color: #ddd;
+}
+[data-dark=true] .web-work .web-content-area .web-content-wrap .web-content .web-content-desc, [data-dark=true] .design-work .design-content-area .design-content-wrap .design-content .design-content-desc {
+  background-color: rgba(255, 255, 255, 0.65);
 }/*# sourceMappingURL=dark.css.map */

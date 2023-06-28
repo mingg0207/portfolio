@@ -160,8 +160,8 @@
         box-sizing: border-box;
         padding-right: 4%;
 
-        $color-dark: (#e96666, #2361aa, #e2211c);
-        $color-bright: (#ffd16d, #68ce60, #ffc410);
+        $color-dark: (#e96666, #2361aa, #009132, #001834, #390000);
+        $color-bright: (#ffd16d, #68ce60, #ffc20d, #00a9ff, #ff9a00);
 
         @for $i from 1 through length($color-dark) { /* 리스트 길이 만큼 순회 */
           &:nth-child(#{$i}){
@@ -182,8 +182,8 @@
           }
         }
         
-        $thumb-design: (url(../images/thumb-itamin.png), url(../images/thumb-water.png), url(../images/thumb-water.png));
-        $thumb-design2: (url(../images/thumb-itamin2.png), url(../images/thumb-water2.png), url(../images/thumb-water2.png));
+        $thumb-design: (url(../images/thumb-itamin.png), url(../images/thumb-water.png), url(../images/thumb-subwaybanner.png), url(../images/thumb-ps.png), url(../images/thumb-ai.jpg));
+        $thumb-design2: (url(../images/thumb-itamin2.png), url(../images/thumb-water2.png), url(../images/thumb-subwaybanner2.png), url(../images/thumb-ps2.png), url(../images/thumb-ai2.jpg));
 
         @for $i from 1 through length($thumb-design) { /* 리스트 길이 만큼 순회 */
           &:nth-child(#{$i}){

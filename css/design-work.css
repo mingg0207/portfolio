@@ -155,6 +155,10 @@
   /* 리스트 길이 만큼 순회 */
   /* 리스트 길이 만큼 순회 */
   /* 리스트 길이 만큼 순회 */
+  /* 리스트 길이 만큼 순회 */
+  /* 리스트 길이 만큼 순회 */
+  /* 리스트 길이 만큼 순회 */
+  /* 리스트 길이 만큼 순회 */
 }
 .design-work .design-content-area .design-content-wrap .design-content:nth-child(1) .design-content-desc .btn-wrap .link-btn:hover {
   border-color: #e96666;
@@ -177,14 +181,34 @@
   background: #68ce60;
 }
 .design-work .design-content-area .design-content-wrap .design-content:nth-child(3) .design-content-desc .btn-wrap .link-btn:hover {
-  border-color: #e2211c;
-  color: #ffc410 !important;
+  border-color: #009132;
+  color: #ffc20d !important;
 }
 .design-work .design-content-area .design-content-wrap .design-content:nth-child(3) .design-content-desc .btn-wrap .link-btn::before {
-  background: #e2211c;
+  background: #009132;
 }
 .design-work .design-content-area .design-content-wrap .design-content:nth-child(3) .design-content-desc .btn-wrap .link-btn::after {
-  background: #ffc410;
+  background: #ffc20d;
+}
+.design-work .design-content-area .design-content-wrap .design-content:nth-child(4) .design-content-desc .btn-wrap .link-btn:hover {
+  border-color: #001834;
+  color: #00a9ff !important;
+}
+.design-work .design-content-area .design-content-wrap .design-content:nth-child(4) .design-content-desc .btn-wrap .link-btn::before {
+  background: #001834;
+}
+.design-work .design-content-area .design-content-wrap .design-content:nth-child(4) .design-content-desc .btn-wrap .link-btn::after {
+  background: #00a9ff;
+}
+.design-work .design-content-area .design-content-wrap .design-content:nth-child(5) .design-content-desc .btn-wrap .link-btn:hover {
+  border-color: #390000;
+  color: #ff9a00 !important;
+}
+.design-work .design-content-area .design-content-wrap .design-content:nth-child(5) .design-content-desc .btn-wrap .link-btn::before {
+  background: #390000;
+}
+.design-work .design-content-area .design-content-wrap .design-content:nth-child(5) .design-content-desc .btn-wrap .link-btn::after {
+  background: #ff9a00;
 }
 .design-work .design-content-area .design-content-wrap .design-content:nth-child(1) .design-content-img > div:hover::after {
   background: url(../images/thumb-itamin2.png);
@@ -207,12 +231,32 @@
   background-position: center center;
 }
 .design-work .design-content-area .design-content-wrap .design-content:nth-child(3) .design-content-img > div:hover::after {
-  background: url(../images/thumb-water2.png);
+  background: url(../images/thumb-subwaybanner2.png);
   background-size: cover;
   background-position: center center;
 }
 .design-work .design-content-area .design-content-wrap .design-content:nth-child(3) .design-content-img .pc::after {
-  background: url(../images/thumb-water.png);
+  background: url(../images/thumb-subwaybanner.png);
+  background-size: cover;
+  background-position: center center;
+}
+.design-work .design-content-area .design-content-wrap .design-content:nth-child(4) .design-content-img > div:hover::after {
+  background: url(../images/thumb-ps2.png);
+  background-size: cover;
+  background-position: center center;
+}
+.design-work .design-content-area .design-content-wrap .design-content:nth-child(4) .design-content-img .pc::after {
+  background: url(../images/thumb-ps.png);
+  background-size: cover;
+  background-position: center center;
+}
+.design-work .design-content-area .design-content-wrap .design-content:nth-child(5) .design-content-img > div:hover::after {
+  background: url(../images/thumb-ai2.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+.design-work .design-content-area .design-content-wrap .design-content:nth-child(5) .design-content-img .pc::after {
+  background: url(../images/thumb-ai.jpg);
   background-size: cover;
   background-position: center center;
 }

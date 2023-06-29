@@ -24,7 +24,6 @@
 .profile .profile-img > img {
   width: 393px;
   position: relative;
-  display: none;
 }
 .profile .profile-img .plus-ani {
   position: absolute;
